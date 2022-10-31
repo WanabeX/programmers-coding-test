@@ -10,3 +10,13 @@ function solution(money) {
 function solution(money) {
   return [Math.floor(money / 5500), money % 5500];
 }
+
+// 또 다른 풀이방식 02(while 사용)
+function solution(money) {
+  let count = 0;
+  while (money >= 5500) {
+    money -= 5500;
+    count++;
+  }
+  return [count, money];
+}

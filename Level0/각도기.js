@@ -11,7 +11,7 @@ function solution(angle) {
   }
 }
 
-// 또 다른 풀이방식 01(삼항 조건 연산자 사용)
+// 나의 풀이(삼항 조건 연산자 사용)
 function solution(angle) {
   return angle < 90 ? 1 : angle === 90 ? 2 : angle < 180 ? 3 : 4;
 }
